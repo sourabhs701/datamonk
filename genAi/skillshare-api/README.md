@@ -41,7 +41,7 @@ Optional env vars:
 
 ### Deployment URL
 
-- Render/Railway: https://datamonk_skill_share_api.onrender.com
+- Render/Railway: https://datamonk-skillshare-api.onrender.com
 
 ### Screenshots
 
