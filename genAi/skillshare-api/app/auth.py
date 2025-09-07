@@ -1,6 +1,6 @@
 
 from passlib.context import CryptContext
-from utils.jwt_handler import decode_token
+from .utils.jwt_handler import decode_token
 from fastapi import HTTPException, Header
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")

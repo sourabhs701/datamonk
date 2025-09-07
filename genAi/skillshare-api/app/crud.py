@@ -3,10 +3,10 @@ from typing import List, Optional
 from fastapi import HTTPException, status
 from sqlmodel import Session
 
-from models import User, Skill
-from schemas import UserCreate, SkillCreate, SkillUpdate
-from auth import get_password_hash, verify_password
-from utils.jwt_handler import create_token
+from .models import User, Skill
+from .schemas import UserCreate, SkillCreate, SkillUpdate
+from .auth import get_password_hash, verify_password
+from .utils.jwt_handler import create_token
 
 
 def create_user(session: Session, data: UserCreate) -> str:

@@ -1,10 +1,10 @@
-from models import User
-from auth import get_current_user_id
+from ..models import User
+from ..auth import get_current_user_id
 from fastapi import APIRouter, HTTPException, Depends, status
-from schemas import UserCreate, TokenSchema, UserLogin, UserOut   
+from ..schemas import UserCreate, TokenSchema, UserLogin, UserOut   
 from sqlmodel import Session
-from database import get_session
-import crud
+from ..database import get_session
+from .. import crud
 
 auth_router = APIRouter(tags=["auth"])
 

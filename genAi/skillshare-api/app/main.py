@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 
-from routes.auth_routes import auth_router
-from routes.skill_routes import skill_router
-from database import create_db
+from .routes.auth_routes import auth_router
+from .routes.skill_routes import skill_router
+from .database import create_db
 
 app = FastAPI()
 

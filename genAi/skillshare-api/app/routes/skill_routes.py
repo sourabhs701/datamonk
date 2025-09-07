@@ -2,11 +2,11 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from sqlmodel import Session
 from typing import List
 
-from database import get_session
-from models import Skill
-from schemas import SkillCreate, SkillUpdate, SkillOut
-from auth import get_current_user_id
-import crud
+from ..database import get_session
+from ..models import Skill
+from ..schemas import SkillCreate, SkillUpdate, SkillOut
+from ..auth import get_current_user_id
+from .. import crud
 
 skill_router = APIRouter(tags=["skills"])
 
