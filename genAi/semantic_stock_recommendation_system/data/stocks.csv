@@ -1,0 +1,25 @@
+symbol,company,sector,description,market_cap
+HDFCBANK,HDFC Bank Ltd.,Private Sector Banks,"India's largest private sector bank offering retail banking, corporate banking, investment banking, and digital financial services with extensive branch network",150000000000
+ICICIBANK,ICICI Bank Ltd.,Private Sector Banks,"Leading private bank providing comprehensive banking solutions including retail, corporate, treasury, and international banking services across multiple countries",98400000000
+AXISBANK,Axis Bank Ltd.,Private Sector Banks,"Third largest private sector bank offering banking and financial services to large corporates, SMEs, and retail customers with strong digital presence",49200000000
+KOTAKBANK,Kotak Mahindra Bank Ltd.,Private Sector Banks,"Full-service commercial bank providing banking and financial services including retail banking, corporate banking, and wealth management solutions",46800000000
+SBIN,State Bank of India,Public Sector Banks,"India's largest public sector bank with extensive domestic and international presence providing comprehensive banking and financial services",91200000000
+PNB,Punjab National Bank,Public Sector Banks,"Major nationalized bank offering retail banking, corporate banking, international banking, and treasury operations with wide branch network",15600000000
+BANKBARODA,Bank of Baroda,Public Sector Banks,"Leading public sector bank with global presence providing banking services to retail, corporate, and institutional clients worldwide",16800000000
+CANBK,Canara Bank,Public Sector Banks,"Major public sector bank offering comprehensive banking services including retail banking, corporate banking, and international operations",18000000000
+BAJFINANCE,Bajaj Finance Ltd.,Non-Banking Financial Companies (NBFC),"Leading consumer finance company providing personal loans, business loans, EMI financing, and digital lending solutions across India",57600000000
+M&MFIN,Mahindra & Mahindra Financial Services Ltd.,Non-Banking Financial Companies (NBFC),"Leading rural and semi-urban focused NBFC providing vehicle financing, tractor loans, and SME financing solutions",3840000000
+CHOLAFIN,Cholamandalam Investment and Finance Company Ltd.,Non-Banking Financial Companies (NBFC),"Diversified financial services company offering vehicle finance, home loans, business loans, and investment services",15600000000
+SHRIRAMFIN,Shriram Finance Ltd.,Non-Banking Financial Companies (NBFC),"Leading NBFC providing commercial vehicle financing, passenger vehicle loans, two-wheeler financing, and gold loans",11400000000
+LICI,Life Insurance Corporation of India,Insurance,"India's largest life insurance company providing comprehensive life insurance products, pension schemes, and investment solutions",78000000000
+SBILIFE,SBI Life Insurance Company Ltd.,Insurance,"Leading private life insurance company offering term plans, savings plans, retirement solutions, and health insurance products",18000000000
+HDFCLIFE,HDFC Life Insurance Company Ltd.,Insurance,"Major life insurance provider offering individual and group life insurance, pension plans, and unit-linked insurance plans",19200000000
+ICICIGI,ICICI Lombard General Insurance Company Ltd.,Insurance,"Leading general insurance company providing motor, health, travel, home, and commercial insurance solutions",10200000000
+TCS,Tata Consultancy Services Ltd.,IT Services & Software,"Global leader in IT services, consulting, and business solutions offering digital transformation, cloud services, and enterprise software development",174000000000
+INFY,Infosys Ltd.,IT Services & Software,"Second-largest Indian IT services company providing consulting, technology, outsourcing, and digital services globally",74400000000
+WIPRO,Wipro Ltd.,IT Services & Software,"Leading IT services company offering consulting, IT outsourcing, business process services, and digital transformation solutions",26400000000
+HCLTECH,HCL Technologies Ltd.,IT Services & Software,"Global IT services and consulting firm providing software-led IT solutions, cloud, cybersecurity, and engineering services",46800000000
+RELIANCE,Reliance Industries Ltd.,Conglomerate,"India's largest company by revenue, with businesses in petrochemicals, refining, telecom (Jio), and retail",240000000000
+ITC,ITC Ltd.,FMCG,"Diversified conglomerate with businesses in FMCG, hotels, paperboards, packaging, and agribusiness",68400000000
+HINDUNILVR,Hindustan Unilever Ltd.,FMCG,"India's largest FMCG company offering personal care, home care, and food & beverages products",76800000000
+ONGC,Oil & Natural Gas Corporation Ltd.,Oil & Gas,"India's largest oil and gas exploration and production company with global operations",34800000000
