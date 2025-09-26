@@ -6,7 +6,6 @@ from datetime import datetime
 mcp = FastMCP("todos")
 
 # --- Database Setup ---
-# This function creates our database and table if they don't exist.
 def init_db():
     conn = sqlite3.connect("todos.db")
     cursor = conn.cursor()
@@ -27,8 +26,6 @@ def init_db():
 init_db()
 
 # --- MCP Tools ---
-# These are the functions our AI will be able to call.
-
 @mcp.tool()
 async def add_todo(title: str, description: str = ""):
     """Adds a new todo to the database."""
@@ -44,29 +41,39 @@ async def add_todo(title: str, description: str = ""):
     conn.close()
     return {"id": todo_id, "title": title, "status": "pending"}
 
-
 @mcp.tool()
-async def get_all_todo():
-    """Return all the todos from the database."""
+async def list_todos():
+    """Lists all todos from the database."""
     conn = sqlite3.connect("todos.db")
     cursor = conn.cursor()
-    cursor.execute("SELECT id, title, description, status, created_at, updated_at FROM todos")
-    rows = cursor.fetchall()
+    cursor.execute("SELECT * FROM todos ORDER BY created_at DESC")
+    todos = cursor.fetchall()
     conn.close()
+    return [{"id": t[0], "title": t[1], "description": t[2], "status": t[3]} for t in todos]
 
-    todos = [
-        {
-            "id": row[0],
-            "title": row[1],
-            "description": row[2],
-            "status": row[3],
-            "created_at": row[4],
-            "updated_at": row[5],
-        }
-        for row in rows
-    ]
-    return todos
-    
+@mcp.tool()
+async def update_todo_status(todo_id: int, status: str):
+    """Updates the status of a todo."""
+    conn = sqlite3.connect("todos.db")
+    cursor = conn.cursor()
+    cursor.execute(
+        "UPDATE todos SET status = ?, updated_at = ? WHERE id = ?",
+        (status, datetime.now().isoformat(), todo_id)
+    )
+    conn.commit()
+    conn.close()
+    return {"id": todo_id, "status": status}
+
+@mcp.tool()
+async def delete_todo(todo_id: int):
+    """Deletes a todo from the database."""
+    conn = sqlite3.connect("todos.db")
+    cursor = conn.cursor()
+    cursor.execute("DELETE FROM todos WHERE id = ?", (todo_id,))
+    conn.commit()
+    conn.close()
+    return {"deleted": todo_id}
+
 # --- Run the Server ---
 if __name__ == "__main__":
     mcp.run(transport="stdio")
